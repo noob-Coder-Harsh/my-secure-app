@@ -10,6 +10,58 @@ import {
   Clock,
 } from "lucide-react";
 
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "ARP IT Solutions – CCTV & Biometric Installation Experts",
+  description:
+    "ARP IT Solutions specializes in CCTV cameras, biometric attendance systems, access control, and IT security solutions. Trusted installation & support for homes and businesses.",
+  keywords: [
+    "CCTV installation",
+    "biometric attendance",
+    "fingerprint access",
+    "security systems",
+    "IT solutions",
+    "ARP IT Solutions",
+    "surveillance",
+  ],
+  authors: [{ name: "ARP IT Solutions" }],
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/cctv.jpg",
+  },
+  openGraph: {
+    title: "ARP IT Solutions – CCTV & Biometric Installation Experts",
+    description:
+      "Professional CCTV and biometric system installations for offices, schools, and homes. Secure your premises with ARP IT Solutions.",
+    url: "https://yourdomain.com",
+    siteName: "ARP IT Solutions",
+    images: [
+      {
+        url: "/cctv.jpg",
+        width: 1200,
+        height: 630,
+        alt: "ARP IT Solutions – CCTV & Biometric Services",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ARP IT Solutions – CCTV & Biometric Installation",
+    description:
+      "Trusted CCTV, biometric attendance, and security solutions provider in India. ARP IT Solutions keeps your business safe.",
+    images: ["/cctv.jpg"],
+    creator: "@im7Digital", // replace with real if available
+  },
+  metadataBase: new URL("https://yourdomain.com"),
+};
+
+
+
 const LandingPage = () => {
   return (
     <>
